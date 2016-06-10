@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-Adarsh:
-BOARD_KERNEL_CMD_LINE :=
-androidboot.selinux= permissive,
 DEVICE_PATH := device/xiaomi/kenzo
 
 TARGET_SPECIFIC_HEADER_PATH := device/xiaomi/kenzo/include
@@ -211,3 +208,5 @@ WIFI_DRIVER_MODULE_NAME     := "wlan"
 
 # inherit from the proprietary version
 -include vendor/xiaomi/kenzo/BoardConfigVendor.mk
+
+ANDROID_COMPILE_WITH_JACK := false
